@@ -1,0 +1,31 @@
+body {
+    background-color: teal;
+}
+
+#map {
+    height: 800px;
+    width: 800px;
+    margin:  50px auto;
+}
+
+.leaflet-popup-content-wrapper img, .mapboxgl-popup-content img {
+    width: 100%;
+}
+
+.marker {
+    background-image: url('images/jewelry-store.svg');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
