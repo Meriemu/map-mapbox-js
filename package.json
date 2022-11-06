@@ -1,0 +1,11 @@
+
+{
+  "homepage": "https://Meriemu.github.io/map-mapbox-js",
+  "name": "map-mapbox",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
