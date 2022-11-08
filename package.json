@@ -1,11 +1,29 @@
-
 {
   "homepage": "https://Meriemu.github.io/map-mapbox-js",
   "name": "map-mapbox",
   "scripts": {
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "sass": "sass scss:public",
+    "sass:dev": "sass --watch --embed-source-map scss:public/styles",
+    "sass:prod": "sass --no-source-map --style compressed scss:public/styles"
   },
   "dependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meriemu/map-mapbox-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meriemu/map-mapbox-js/issues"
+  },
+  "description": ""
 }

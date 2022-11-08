@@ -1,0 +1,133 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+html, body, ul, ol, li, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: teal;
+  margin: 0;
+}
+
+#map {
+  height: 100vh;
+  width: 800px;
+  margin: auto;
+  /* margin: 50px auto; */
+}
+
+.leaflet-popup-content-wrapper img,
+.mapboxgl-popup-content img {
+  width: 100%;
+}
+
+.marker {
+  background-image: url("../../images/marker-figma.svg");
+  background-size: cover;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.marker span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 6px;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 794px !important;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* //Popup style */
+.popup {
+  text-align: center;
+}
+.popup .slideshow .popup-slider {
+  display: none;
+}
+.popup .slideshow .popup-slider.active {
+  display: flex;
+  flex-direction: row;
+  /* width: 101px; */
+  /* height: 138px; */
+}
+.popup .slideshow .popup-left img {
+  width: 101px;
+  height: 138px;
+}
+.popup .slideshow .caption {
+  background: #eee;
+  padding: 10px;
+}
+.popup .cycle {
+  padding: 10px 0 20px;
+}
+.popup .cycle a.prev {
+  float: left;
+}
+.popup .cycle a.next {
+  float: right;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  z-index: 400;
+  padding: 10px;
+}
+
+.fcc {
+  display: none;
+  position: absolute;
+  left: 50px;
+  bottom: 15px;
+  z-index: 450;
+  width: 150px;
+  text-align: right;
+  background-color: #00ff00;
+}
+
+.fc {
+  height: 150px;
+  width: 100%;
+}
+
+.pcc {
+  width: 150px;
+}
+
+.pc {
+  display: none;
+  height: 150px;
+  width: 100%;
+}
+
+.leaflet-tooltip {
+  padding: 0.8px 13px !important;
+}
+.leaflet-tooltip::before {
+  content: none !important;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../scss/_map.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACE;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAGJ;EACI;EACA;;;AAGF;EACE;EACA;EACA;AACA;;;AAGF;AAAA;EAEE;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIF;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACE;;;AAGF;EACE;EACA;;;AAGF;AACA;EACE;;AAGE;EACE;;AAEA;EACE;EACA;AAEA;AACA;;AAKF;EACE;EACA;;AAIJ;EACE;EACA;;AAIJ;EACE;;AAGE;EACE;;AAGF;EACE;;;AAOR;EACI;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;AAIJ;EACC;;AAEA;EACC%22,%22file%22:%22style.css%22%7D */

@@ -1,0 +1,148 @@
+  // _base.scss
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  html, body, ul, ol, li, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: teal;
+    margin: 0;
+  }
+  
+  #map {
+    height: 100vh;
+    width: 800px;
+    margin: auto;
+    /* margin: 50px auto; */
+  }
+  
+  .leaflet-popup-content-wrapper img,
+  .mapboxgl-popup-content img {
+    width: 100%;
+  }
+  
+  .marker {
+    background-image: url("../../images/marker-figma.svg");
+    background-size: cover;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+   
+  
+  .marker  span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 6px;
+      cursor: pointer;
+  }
+  
+  .mapboxgl-popup {
+    max-width: 794px!important;
+  }
+  
+  .mapboxgl-popup-content {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* //Popup style */
+  .popup {
+    text-align: center;
+  
+    .slideshow {
+      .popup-slider {
+        display: none;
+  
+        &.active {
+          display: flex;
+          flex-direction: row;
+  
+          /* width: 101px; */
+          /* height: 138px; */
+        }
+      }
+  
+      .popup-left {
+        img {
+          width: 101px;
+          height: 138px;
+        }
+      }
+  
+      .caption {
+        background: #eee;
+        padding: 10px;
+      }
+    }
+  
+    .cycle {
+      padding: 10px 0 20px;
+  
+      a {
+        &.prev {
+          float: left;
+        }
+  
+        &.next {
+          float: right;
+        }
+      }
+    }
+  }
+  
+  
+  .controls {  
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      z-index: 400;
+      padding: 10px;
+    }
+    .fcc {
+      display: none;
+      position: absolute;
+      left: 50px;
+      bottom: 15px;
+      z-index: 450;
+      width: 150px;
+      text-align: right;
+      background-color: #00ff00;
+    }
+    .fc {
+      height: 150px;
+      width: 100%;
+    }
+    
+    .pcc {
+      width: 150px;
+    }
+    
+    .pc {
+      display: none;
+      height: 150px;
+      width: 100%;
+    }
+    
+  
+  .leaflet-tooltip {  
+   padding: 0.8px 13px!important;
+
+   &::before {
+    content: none!important; 
+   }
+  }
