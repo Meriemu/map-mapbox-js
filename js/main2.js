@@ -22,7 +22,7 @@ var geoJson = {
         type: "Point",
         coordinates: [2.3484063461432183, 48.857478354732855],
       },
-      properties: {
+      properties = {
         tooltip: "Tooltip 1",
         title: "Haute École de la Joaillerie (75)",
         description: template, 
