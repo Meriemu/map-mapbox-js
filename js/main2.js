@@ -1,5 +1,4 @@
-L.mapbox.accessToken =
-  "pk.eyJ1IjoibWVydWVtOTIiLCJhIjoiY2xhNWRyN3JkMWJvbTNvcXZvYXU0cWl0aiJ9.pWdlzMRfATUD5FvD1fkOUA";
+L.mapbox.accessToken = process.env.MAPBOX_API_KEY;
 var map = L.mapbox
   .map("map")
   .setView([48, 2.5], 5)
@@ -22,7 +21,7 @@ var geoJson = {
         type: "Point",
         coordinates: [2.3484063461432183, 48.857478354732855],
       },
-      properties = {
+      properties: {
         tooltip: "Tooltip 1",
         title: "Haute École de la Joaillerie (75)",
         description: template, 

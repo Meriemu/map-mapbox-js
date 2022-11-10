@@ -1,47 +1,13 @@
-// const apiKey = "pk.eyJ1IjoibWVydWVtOTIiLCJhIjoiY2xhNWRyN3JkMWJvbTNvcXZvYXU0cWl0aiJ9.pWdlzMRfATUD5FvD1fkOUA"
-
-// const myMap = L.map('map').setView([48.848795, 2.242751], 6);
-
-// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     maxZoom: 19,
-//     // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-// }).addTo(myMap);
-
-// // adding markers
-// const marker = L.marker([48.86855929293761, 2.784103507725828]).addTo(myMap);
-
-// // adding popup
-// // marker.bindPopup("Yo sekai !");
-// // marker.bindPopup("<h1>Yo sekai !</h1>").openPopup();  // showing popup when load
-// let template = `
-//     <h1>Yo sekai !</h1>
-//     <img src="images/disney.jpg" alt="" />
-// `
-// marker.bindPopup(template);
-
-// //adding circle
-// const circle = L.circle([48.86855929293761, 2.784103507725828], {
-//     radius: 500,
-//     color: "gray",
-//     // fillColor: "red",
-//     // fillOpacity: .2
-// }).addTo(myMap)
-
-// ------------------------------------------------
-mapboxgl.accessToken =
-  "pk.eyJ1IjoibWVydWVtOTIiLCJhIjoiY2xhNWRyN3JkMWJvbTNvcXZvYXU0cWl0aiJ9.pWdlzMRfATUD5FvD1fkOUA";
+mapboxgl.accessToken = process.env.MAPBOX_API_KEY;
 
 const map = new mapboxgl.Map({
   container: "map",
-  //   style: 'mapbox://styles/mapbox/light-v10',
+  // style: 'mapbox://styles/mapbox/light-v10',
   // style: 'mapbox://styles/meruem92/cla6k8k0w005v15o42page5q4',
   style: "mapbox://styles/meruem92/cla6ktb2n001v16nw5ludpq67",
   center: [2.5, 48],
   zoom: 4.4,
 });
-
-// var myLayer = L.mapbox.featureLayer().addTo(map);
-
 let template = `
     <h1>Yo sekai !</h1>
     <img src="images/disney.jpg" alt="" />
@@ -167,7 +133,7 @@ var geoJson = {
           },
         ],
         icon: {
-          iconUrl: "../images/marker-figma.svg",
+          // iconUrl: "../images/marker-figma--light.svg",
           // iconSize: [20, 20], // size of the icon
           iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
           popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
@@ -293,7 +259,7 @@ var geoJson = {
           },
         ],
         icon: {
-          iconUrl: "../images/marker-figma.svg",
+          // iconUrl: "../images/marker-figma--light.svg",
           // iconSize: [20, 20], // size of the icon
           iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
           popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
@@ -309,7 +275,7 @@ map.on("load", function () {
     var el = document.createElement("div");
     el.className = "marker";
     el.innerHTML = "<span><b>" + ( marker.properties.number) + "</b></span>";
-    el.style.backgroundImage = "../images/marker-figma.svg";
+    // el.style.backgroundImage = "../images/marker-figma--light.svg";
     el.style.width = 25 + "px";
     el.style.height = 28 + "px";
 

@@ -29,7 +29,7 @@ body {
 }
 
 .marker {
-  background-image: url("../../images/marker-figma.svg");
+  background-image: url("../../images/marker-figma--light.svg");
   background-size: cover;
   background-size: 25px 25px;
   background-repeat: no-repeat;
