@@ -61,7 +61,7 @@ var geoJson = {
         number: 1,
         slider: [
           {
-            image: "../images/logo-university.png",
+            image: "./images/logo-university.png",
             title: "Haute École de la Joaillerie (75) marker 1 -slider 1",
             description: "Haute École de la Joaillerie (75)",
             "marker-size": "large",
@@ -91,7 +91,7 @@ var geoJson = {
             c6: "CAP / BMA Bijouterie Joaillerie ",
             desc6: "Option Sertissage",
 
-            qrCode: "../images/qr-code.png",
+            qrCode: "./images/qr-code.png",
             goSite: "Accédez au site de l’école",
             // Store the image url and caption in an array.
           },
@@ -126,7 +126,7 @@ var geoJson = {
             c6: "CAP / BMA Bijouterie Joaillerie ",
             desc6: "Option Sertissage",
 
-            qrCode: "../images/qr-code.png",
+            qrCode: "./images/qr-code.png",
             goSite: "Accédez au site de l’école",
             // Store the image url and caption in an array.
           },
@@ -161,7 +161,7 @@ var geoJson = {
             c6: "CAP / BMA Bijouterie Joaillerie ",
             desc6: "Option Sertissage",
 
-            qrCode: "../images/qr-code.png",
+            qrCode: "./images/qr-code.png",
             goSite: "Accédez au site de l’école",
             // Store the image url and caption in an array.
           },
@@ -187,7 +187,7 @@ var geoJson = {
         number: 5,
         slider: [
           {
-            image: "../images/logo-university.png",
+            image: "./images/logo-university.png",
             title: "Haute École de la Joaillerie (75) marker 2 -slider 1",
             description: "Haute École de la Joaillerie (75)",
             "marker-size": "large",
@@ -217,7 +217,7 @@ var geoJson = {
             c6: "CAP / BMA Bijouterie Joaillerie ",
             desc6: "Option Sertissage",
 
-            qrCode: "../images/qr-code.png",
+            qrCode: "./images/qr-code.png",
             goSite: "Accédez au site de l’école",
             // Store the image url and caption in an array.
           },
@@ -252,7 +252,7 @@ var geoJson = {
             c6: "CAP / BMA Bijouterie Joaillerie ",
             desc6: "Option Sertissage",
 
-            qrCode: "../images/qr-code.png",
+            qrCode: "./images/qr-code.png",
             goSite: "Accédez au site de l’école",
             // Store the image url and caption in an array.
           },
@@ -287,7 +287,7 @@ var geoJson = {
             c6: "CAP / BMA Bijouterie Joaillerie ",
             desc6: "Option Sertissage",
 
-            qrCode: "../images/qr-code.png",
+            qrCode: "./images/qr-code.png",
             goSite: "Accédez au site de l’école",
             // Store the image url and caption in an array.
           },
