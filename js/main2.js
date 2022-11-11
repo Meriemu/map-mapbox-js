@@ -1,4 +1,6 @@
-L.mapbox.accessToken = process.env.MAPBOX_API_KEY;
+// import apiKey from '../apiKey.mjs';
+// mapboxgl.accessToken = apiKey;
+
 var map = L.mapbox
   .map("map")
   .setView([48, 2.5], 5)
