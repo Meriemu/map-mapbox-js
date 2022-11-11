@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+apiKey.mjs
 /.pnp
 .pnp.js
 
