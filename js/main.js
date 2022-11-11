@@ -1,5 +1,7 @@
-mapboxgl.accessToken = process.env.MAPBOX_API_KEY;
+import {MAPBOX_API_KEY} from '../apiKey.mjs';
 
+mapboxgl.accessToken = MAPBOX_API_KEY;
+console.log(MAPBOX_API_KEY)
 const map = new mapboxgl.Map({
   container: "map",
   // style: 'mapbox://styles/mapbox/light-v10',
